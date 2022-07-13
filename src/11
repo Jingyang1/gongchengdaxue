@@ -1,0 +1,6 @@
+this.$nextTick(() => {
+    this.$refs.photo.onload = function() {
+    this.photosHeight = this.height + 'px' // 注意Carousel的height属性是string类型。即高度+px
+    }
+    })
+    
